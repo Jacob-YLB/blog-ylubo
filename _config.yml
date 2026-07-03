@@ -104,3 +104,8 @@ deploy:
   type: git
   repo: https://github.com/Jacob-YLB/blog-ylubo.git
   branch: main
+
+# 启用全文搜索
+search:
+  path: search.xml
+  field: post
