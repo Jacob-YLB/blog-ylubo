@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>博客发布流程</title>
+      <link href="/2026/07/08/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B/"/>
+      <url>/2026/07/08/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-切换到源码分支"><a href="#1-切换到源码分支" class="headerlink" title="1. 切换到源码分支"></a>1. 切换到源码分支</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout <span class="built_in">source</span></span><br><span class="line">git pull origin <span class="built_in">source</span></span><br></pre></td></tr></table></figure><h1 id="2-写文章，本地预览"><a href="#2-写文章，本地预览" class="headerlink" title="2. 写文章，本地预览"></a>2. 写文章，本地预览</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npx hexo new <span class="string">&quot;博客发布流程&quot;</span></span><br><span class="line">npx hexo clean &amp;&amp; npx hexo g &amp;&amp; npx hexo s</span><br><span class="line"><span class="comment"># npx hexo clean</span></span><br><span class="line"><span class="comment"># npx hexo generate</span></span><br><span class="line"><span class="comment"># npx hexo server</span></span><br></pre></td></tr></table></figure><h1 id="3-提交源码"><a href="#3-提交源码" class="headerlink" title="3. 提交源码"></a>3. 提交源码</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure><h1 id="4-提交备注，建议写清楚改动内容，方便以后回滚"><a href="#4-提交备注，建议写清楚改动内容，方便以后回滚" class="headerlink" title="4. 提交备注，建议写清楚改动内容，方便以后回滚"></a>4. 提交备注，建议写清楚改动内容，方便以后回滚</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;xxxx&quot;</span></span><br></pre></td></tr></table></figure><h1 id="5-推送到远端仓库备份"><a href="#5-推送到远端仓库备份" class="headerlink" title="5. 推送到远端仓库备份"></a>5. 推送到远端仓库备份</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin <span class="built_in">source</span></span><br></pre></td></tr></table></figure><h1 id="6-生成静态网页并自动推送到-main-分支"><a href="#6-生成静态网页并自动推送到-main-分支" class="headerlink" title="6. 生成静态网页并自动推送到 main 分支"></a>6. 生成静态网页并自动推送到 main 分支</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx hexo clean &amp;&amp; npx hexo g &amp;&amp; npx hexo d</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2026/07/03/hello-world/"/>
       <url>/2026/07/03/hello-world/</url>

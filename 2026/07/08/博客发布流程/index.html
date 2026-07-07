@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hello World | 云麓谷</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Hello World | 云麓谷">
+  <title>博客发布流程 | 云麓谷</title>
+  <meta name="keywords" content=" Hexo , 教程 ">
+  <meta name="description" content="博客发布流程 | 云麓谷">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="1. 切换到源码分支12git checkout sourcegit pull origin source 2. 写文章，本地预览12345npx hexo new &quot;博客发布流程&quot;npx hexo clean &amp;&amp; npx hexo g &amp;&amp; npx hexo s# npx hexo clean# npx hexo generate# npx">
 <meta property="og:type" content="article">
@@ -415,24 +415,41 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-博客发布流程" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hello World</h1>
+        <h1 class="article-title">博客发布流程</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="技术">技术</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">Hexo</a>
+            
+            <a class="color3">教程</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2026-07-03 21:21:37'>2026-07-03 21:21</time>
+            Created At : <time class="date" title='Updated At: 2026-07-08 01:09:42'>2026-07-08 01:05</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:75</span>
+        <span>Count:131</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -462,7 +479,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E5%88%87%E6%8D%A2%E5%88%B0%E6%BA%90%E7%A0%81%E5%88%86%E6%94%AF"><span class="toc-text">1. 切换到源码分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E5%86%99%E6%96%87%E7%AB%A0%EF%BC%8C%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88"><span class="toc-text">2. 写文章，本地预览</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E6%8F%90%E4%BA%A4%E6%BA%90%E7%A0%81"><span class="toc-text">3. 提交源码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E6%8F%90%E4%BA%A4%E5%A4%87%E6%B3%A8%EF%BC%8C%E5%BB%BA%E8%AE%AE%E5%86%99%E6%B8%85%E6%A5%9A%E6%94%B9%E5%8A%A8%E5%86%85%E5%AE%B9%EF%BC%8C%E6%96%B9%E4%BE%BF%E4%BB%A5%E5%90%8E%E5%9B%9E%E6%BB%9A"><span class="toc-text">4. 提交备注，建议写清楚改动内容，方便以后回滚</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%AB%AF%E4%BB%93%E5%BA%93%E5%A4%87%E4%BB%BD"><span class="toc-text">5. 推送到远端仓库备份</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E5%B9%B6%E8%87%AA%E5%8A%A8%E6%8E%A8%E9%80%81%E5%88%B0-main-%E5%88%86%E6%94%AF"><span class="toc-text">6. 生成静态网页并自动推送到 main 分支</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -478,20 +495,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="1-切换到源码分支"><a href="#1-切换到源码分支" class="headerlink" title="1. 切换到源码分支"></a>1. 切换到源码分支</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout <span class="built_in">source</span></span><br><span class="line">git pull origin <span class="built_in">source</span></span><br></pre></td></tr></table></figure>
+<h1 id="2-写文章，本地预览"><a href="#2-写文章，本地预览" class="headerlink" title="2. 写文章，本地预览"></a>2. 写文章，本地预览</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npx hexo new <span class="string">&quot;博客发布流程&quot;</span></span><br><span class="line">npx hexo clean &amp;&amp; npx hexo g &amp;&amp; npx hexo s</span><br><span class="line"><span class="comment"># npx hexo clean</span></span><br><span class="line"><span class="comment"># npx hexo generate</span></span><br><span class="line"><span class="comment"># npx hexo server</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+<h1 id="3-提交源码"><a href="#3-提交源码" class="headerlink" title="3. 提交源码"></a>3. 提交源码</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<h1 id="4-提交备注，建议写清楚改动内容，方便以后回滚"><a href="#4-提交备注，建议写清楚改动内容，方便以后回滚" class="headerlink" title="4. 提交备注，建议写清楚改动内容，方便以后回滚"></a>4. 提交备注，建议写清楚改动内容，方便以后回滚</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;xxxx&quot;</span></span><br></pre></td></tr></table></figure>
+<h1 id="5-推送到远端仓库备份"><a href="#5-推送到远端仓库备份" class="headerlink" title="5. 推送到远端仓库备份"></a>5. 推送到远端仓库备份</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin <span class="built_in">source</span></span><br></pre></td></tr></table></figure>
+<h1 id="6-生成静态网页并自动推送到-main-分支"><a href="#6-生成静态网页并自动推送到-main-分支" class="headerlink" title="6. 生成静态网页并自动推送到 main 分支"></a>6. 生成静态网页并自动推送到 main 分支</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx hexo clean &amp;&amp; npx hexo g &amp;&amp; npx hexo d</span><br></pre></td></tr></table></figure>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 ylubo@qq.com </span>
     </div>
