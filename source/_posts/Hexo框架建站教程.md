@@ -2,7 +2,9 @@
 title: Hexo框架建站教程
 date: 2026-07-02 16:43:00
 tags: [Hexo, 教程]
-categories: 技术
+categories: 
+    - 技术
+    - 博客
 ---
 
 # 一 整体架构说明：
